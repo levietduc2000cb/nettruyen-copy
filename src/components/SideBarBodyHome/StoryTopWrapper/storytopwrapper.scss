@@ -1,0 +1,27 @@
+@import "../../../variables/Variables.scss";
+.story-top-wrapper {
+  width: 100%;
+  border-left: 1px solid $gray;
+  border-right: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+}
+.story-top-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #ecf0f1;
+  & > div {
+    font-size: 1.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+    cursor: pointer;
+    border-top: 2px solid transparent;
+    &.active {
+      border-color: $purple;
+      background-color: white;
+      cursor: auto;
+    }
+    &:hover {
+      border-color: $purple;
+    }
+  }
+}

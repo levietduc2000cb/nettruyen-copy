@@ -1,0 +1,136 @@
+@import "../../variables/Variables.scss";
+@import "../../mixin/Mixin.scss";
+
+.header {
+  width: 100vw;
+  height: auto;
+  background-image: url(../../asset/image/nettruyen_header_background.jpg);
+  object-position: center;
+  object-fit: cover;
+}
+.container_header {
+  @include container(1030px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  &-img {
+    cursor: pointer;
+  }
+  &-mid {
+    display: flex;
+    align-items: center;
+  }
+  &-search-bar {
+    width: 42.8rem;
+    max-width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    & > input {
+      border: none;
+      outline: none;
+      padding: 0.6rem 1.2rem;
+      flex: 1;
+      font-size: 1.6rem;
+    }
+    & > div {
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+      display: flex;
+      align-items: center;
+      background-color: #ebebeb;
+    }
+  }
+  &-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    &-avatar {
+      width: 2.4rem;
+      height: 2.4rem;
+      & > img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-nav {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin: 0 0.4rem;
+    }
+    &:hover &-list-nav {
+      visibility: visible;
+      opacity: 1;
+    }
+    &-list-nav {
+      visibility: hidden;
+      opacity: 0;
+      width: 162px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      border-radius: 0.5rem;
+      margin-top: 0.4rem;
+      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1.4rem;
+        background-color: transparent;
+        top: -1.2rem;
+      }
+      & li:first-child,
+      & li:last-child {
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+      & li:hover > a {
+        background-color: rgb(228, 228, 228);
+        color: $purple;
+      }
+      & a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 1rem 1.8rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+.search-icon {
+  font-size: 2rem;
+}
+.lightbulb-icon {
+  font-size: 2.2rem;
+  color: #ff9601;
+  margin-left: 5.4rem;
+  cursor: pointer;
+}
+.comment-icon {
+  font-size: 2.2rem;
+  color: white;
+  margin-left: 1.4rem;
+  cursor: pointer;
+}
+.caredown-icon {
+  font-size: 1.2rem;
+  color: white;
+}
+.icon-nav {
+  width: 2rem;
+  margin-right: 0.2rem;
+}

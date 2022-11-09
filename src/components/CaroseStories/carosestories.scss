@@ -1,0 +1,45 @@
+/* the slides */
+.slick-slide {
+  & > div {
+    margin: 0 1rem;
+  }
+}
+/* the parent */
+.slick-list {
+  margin: 0 -1rem;
+}
+
+.carose-contain {
+  position: relative;
+  &-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(215, 212, 212, 0.2);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(215, 212, 212, 0.4);
+    }
+    &:hover &-icon {
+      color: rgb(81, 88, 85);
+    }
+  }
+  .btn-pre {
+    left: 0;
+  }
+
+  .btn-next {
+    right: 0;
+  }
+  .icon-pre,
+  .icon-next {
+    font-size: 2rem;
+    color: rgba(103, 103, 103, 0.2);
+  }
+}

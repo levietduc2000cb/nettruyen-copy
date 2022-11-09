@@ -1,0 +1,99 @@
+@import "../../variables/Variables.scss";
+@import "../../mixin/Mixin.scss";
+
+footer {
+  background-color: #222222;
+}
+.footer-container {
+  @include container(1030px);
+  display: grid;
+  grid-template-columns: 32% 68%;
+  gap: 0 16px;
+  padding: 1.6rem 0;
+  .footer-contain-logo {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+  .footer-drop {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    .avatar-nettruyen {
+      width: 5.3rem;
+      height: 5.3rem;
+      object-fit: cover;
+    }
+    &-link-page {
+      font-size: 1.8rem;
+      margin-left: 0.6rem;
+      &-direction {
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #365899;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &-link-like {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem 1rem;
+        background-color: #f5f6f7;
+        text-decoration: none;
+        color: #4b4f56;
+        margin-right: 0.5rem;
+      }
+      &-icon {
+        color: #375798;
+        font-size: 1.4rem;
+        margin-right: 0.2rem;
+      }
+      & > p {
+        color: #1d2129;
+      }
+    }
+  }
+  &-text {
+    color: white;
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+  &-key-word {
+    &-title {
+      font-size: 1.8rem;
+      color: white;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+    }
+    &-list-type {
+      & > a {
+        display: inline-block;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+        padding: 0.6rem;
+        border: 1px solid white;
+        border-radius: 0.5rem;
+        margin-right: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}

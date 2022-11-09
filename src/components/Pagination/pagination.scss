@@ -1,0 +1,26 @@
+.pagination {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  & > span {
+    width: 4rem;
+    height: 3.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 0.1rem;
+    border: 1px solid #d3d3d3;
+    color: #b0a79c;
+    &.active {
+      color: white;
+      background-color: #00a5f0;
+    }
+    &:not(.active):hover {
+      cursor: pointer;
+      color: #3658b0;
+      background-color: #ebebeb;
+    }
+  }
+}

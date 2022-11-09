@@ -1,0 +1,73 @@
+@import "../../../../variables/Variables.scss";
+
+.new-comment {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top: 1px solid $gray;
+  &-story {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &-name {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      cursor: pointer;
+      &:hover {
+        color: #0033ff;
+      }
+    }
+    &-chapter {
+      font-size: 1.2rem;
+      line-height: 1.7429rem;
+      color: $blue;
+      cursor: pointer;
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+  &-person {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &-avatar-wrapper {
+      width: 4rem;
+      height: 4.2rem;
+    }
+    &-avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-comment {
+      font-size: 1.3rem;
+      flex: 1;
+      margin-left: 1rem;
+      &-introduce {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        &-name {
+          font-weight: 700;
+          color: #0033ff;
+        }
+        &-time {
+          font-style: italic;
+          color: #a0a0a0;
+          font-size: 1.1rem;
+          display: flex;
+          align-items: center;
+          & > span:nth-child(2) {
+            text-decoration: underline;
+          }
+        }
+      }
+      &-text {
+        color: #4b4b4b;
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}

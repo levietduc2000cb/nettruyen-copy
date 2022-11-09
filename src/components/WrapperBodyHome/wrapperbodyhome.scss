@@ -1,0 +1,16 @@
+@import "../../variables/Variables.scss";
+@import "../../mixin/Mixin.scss";
+
+.wrapper-body-home {
+  @include container(1030px);
+}
+.wrapper-body-contain {
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  gap: 0 3.4rem;
+  background-color: white;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 5rem;
+}
